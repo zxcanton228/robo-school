@@ -1,0 +1,15 @@
+@import "./../../../styles/_option"
+.btn
+	background-color: $accent
+	color: $background
+	padding: 25px 54px
+	border-radius: 5px
+
+	transition: transform .4s, background-color .3s
+	&:hover
+		transform: scale(0.97)
+		background-color: $accentHover
+	&:disabled
+		background-color: $gray
+		cursor: not-allowed
+		transform: scale(0.95)

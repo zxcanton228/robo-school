@@ -1,0 +1,33 @@
+@import "./_option.sass"
+@import "./reset.sass"
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap')
+
+body, html
+	background-color: $background
+	color: $color
+	font-family: $font
+	height: 100%
+	
+main
+	flex: 1 0 auto
+	max-width: 100vw
+	overflow: hidden
+#root
+	min-height: 100%
+	display: flex
+	flex-direction: column
+.container
+	width: min(98%, 1160px)
+	margin: 0 auto
+
+::selection 
+	background: $background
+	color: #fff
+
+::-webkit-scrollbar
+	width: 9px
+	background: $background
+
+::-webkit-scrollbar-thumb
+	background: $accent
+	width: 9px

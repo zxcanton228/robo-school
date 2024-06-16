@@ -1,0 +1,23 @@
+@import "./../../../styles/_option.sass"
+.header
+	padding: 30px 100px
+	margin-bottom: calc( 1080px - $headerHeight )
+	height: $headerHeight
+
+	color: $background
+
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	position: relative
+	z-index: 999
+	.header__title
+		@include title()
+	.header__nav
+		display: flex
+		column-gap: 40px
+		.header__link
+			color: $background
+			font: 400 20px $font
+		

@@ -1,0 +1,18 @@
+@import "./../../../styles/_option"
+.packet
+	height: 500px
+	border-radius: 20px
+	padding: 40px
+
+	display: inline-block
+	position: relative
+	.btn-cont
+		width: 100%
+		position: absolute
+		bottom: 40px
+		left: 40px
+		button
+			width: calc( 100% - 80px )
+	&.active
+		background-color: $black
+		color: $background
