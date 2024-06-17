@@ -14,10 +14,26 @@
 	z-index: 999
 	.header__title
 		@include title()
+	.header-mobile__nav
+		display: none
 	.header__nav
 		display: flex
 		column-gap: 40px
 		.header__link
 			color: $background
 			font: 400 20px $font
-		
+
+@media screen and (width <= 1040px)
+	.header
+		padding: 10px
+		.phone
+			display: none !important
+		.header-mobile__nav
+			display: flex !important
+			button
+				width: 44px
+				height: 44px
+				font-size: 30px
+				
+		.header__nav
+			display: none !important

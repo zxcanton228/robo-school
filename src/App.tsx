@@ -1,4 +1,5 @@
 import Before from "./Components/Before/Before"
+import Feedback from "./Components/Feedback/Feedback"
 import Info from "./Components/Info/Info"
 import Landing from "./Components/Landing/Landing"
 import Footer from "./Components/Layout/Footer/Footer"
@@ -16,6 +17,7 @@ function App() {
 				<Before />
 				<Trainers />
 				<Packets />
+				<Feedback />
 			</main>
 			<Footer />
 		</>

@@ -1,20 +1,13 @@
 import Phone from "../Phone/Phone"
 import "./Header.sass"
+import MobNav from "./MobNav/MobNav"
+import Nav from "./Nav/Nav"
 const Header = () => {
 	return (
 		<header className='header'>
 			<h1 className='header__title'>ROBO.SCHOOL</h1>
-			<nav className='header__nav'>
-				<a href='#' className='header__link'>
-					О школе
-				</a>
-				<a href='#' className='header__link'>
-					Тренеры
-				</a>
-				<a href='#' className='header__link'>
-					Стоимость
-				</a>
-			</nav>
+			<Nav />
+			<MobNav />
 			<Phone />
 		</header>
 	)

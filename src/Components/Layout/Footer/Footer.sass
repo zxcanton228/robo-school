@@ -12,8 +12,15 @@
 
 	.footer__title
 		h1
-			font: 700 30px $font
+			font: 700 clamp(18px, 5vw, 30px) $font
 			line-height: 48px
 		h3
 			font: 400 16px $font
 			color: $gray
+@media screen and (width <= 700px)
+	.footer
+		height: 197px
+		display: grid
+		justify-content: center
+		row-gap: 20px
+		text-align: center

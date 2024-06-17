@@ -4,14 +4,18 @@ import { IPacket } from "../packet.data"
 import "./Packet.sass"
 const Packet: FC<IPacket> = ({ description, isActive, price, rang }) => {
 	return (
-		<section className={isActive ? "packet active" : "packet"}>
-			<h3>{rang}</h3>
-			<h1>{price} ₽</h1>
-			<p>{description}</p>
-			<div className='btn-cont'>
+		<article className={isActive ? "packet active" : "packet"}>
+			<h3 className='packet__rang'>– {rang} –</h3>
+			<div className='packet__text'>
+				<div>
+					<h1>{price} ₽</h1>
+					<p>{description}</p>
+				</div>
+			</div>
+			<div className='packet__btn-cont'>
 				<Button>Оставить заявку</Button>
 			</div>
-		</section>
+		</article>
 	)
 }
 

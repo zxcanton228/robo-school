@@ -8,6 +8,7 @@
 			display: grid
 			grid-template-columns: repeat(auto-fill, 360px)
 			justify-content: space-between
+			row-gap: 50px
 			.before__item
 				h1
 					color: $color
@@ -19,3 +20,8 @@
 					opacity: 0.7
 					line-height: 28px
 					font: 400 18px $font
+@media screen and (width <= 755px)
+	.befores
+		justify-content: center !important
+		.before__item
+			text-align: center

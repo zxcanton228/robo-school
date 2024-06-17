@@ -1,12 +1,30 @@
 @import "./../../../styles/_option"
 .packet
-	height: 500px
+	height: 460px
 	border-radius: 20px
 	padding: 40px
 
+	border: rgba(20, 16, 36, 0.2) 1px solid
+
 	display: inline-block
 	position: relative
-	.btn-cont
+	.packet__rang
+		text-align: center
+		font: 600 30px $font
+		line-height: 48px
+	.packet__text
+		height: 70%
+		display: grid
+		align-items: center
+		div
+			text-align: center
+			h1
+				font: 600 50px $font
+				line-height: 80px
+			p
+				font: 400 18px $font
+				margin-top: 20px !important
+	.packet__btn-cont
 		width: 100%
 		position: absolute
 		bottom: 40px
@@ -16,3 +34,5 @@
 	&.active
 		background-color: $black
 		color: $background
+		border: none
+		height: 500px !important
