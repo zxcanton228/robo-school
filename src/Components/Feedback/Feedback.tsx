@@ -1,3 +1,4 @@
+import { IMG_URL } from "../../constants/sys"
 import "./Feedback.sass"
 import Form from "./Form/Form"
 const Feedback = () => {
@@ -11,7 +12,11 @@ const Feedback = () => {
 				<Form />
 			</div>
 			<div className='img'>
-				<img className='feedback__img' src='/procent.svg' alt='' />
+				<img
+					className='feedback__img'
+					src={`${IMG_URL}procent.svg`}
+					alt='Procents'
+				/>
 			</div>
 		</section>
 	)

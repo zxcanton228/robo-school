@@ -1,3 +1,4 @@
+import { IMG_URL } from "../../constants/sys"
 import Button from "../ui/Button/Button"
 import "./Landing.sass"
 const Landing = () => {
@@ -12,7 +13,7 @@ const Landing = () => {
 					</p>
 					<Button>Записаться на пробы</Button>
 				</section>
-				<img alt='logo' src='/landing.svg'></img>
+				<img alt='logo' src={`${IMG_URL}landing.svg`}></img>
 			</div>
 		</div>
 	)

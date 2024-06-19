@@ -1,4 +1,5 @@
 import { FC } from "react"
+import { IMG_URL } from "../../../constants/sys"
 import { useModal, useTrainers } from "../../../store"
 import { ITrainer } from "../trainers.data"
 import "./Trainer.sass"
@@ -11,7 +12,7 @@ const Trainer: FC<IProp> = ({ trainer }) => {
 	return (
 		<>
 			<section className='trainer'>
-				<img src={`/humans/${trainer.avatar}`} alt={trainer.name} />
+				<img src={`${IMG_URL}humans/${trainer.avatar}`} alt={trainer.name} />
 				<section className='trainer__text'>
 					<h1>{trainer.name}</h1>
 					<p>{trainer.job}</p>
