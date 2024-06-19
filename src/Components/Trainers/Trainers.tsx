@@ -13,7 +13,7 @@ import { trainersData } from "./trainers.data"
 
 const Trainers = () => {
 	let sliderRef = useRef(null)
-	const { width, isBig, isMedium, isSmall } = useResize()
+	const { isBig, isMedium, isSmall } = useResize()
 	const next = () => {
 			// @ts-ignore
 			sliderRef.slickNext()
