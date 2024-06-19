@@ -1,17 +1,16 @@
-import { Dispatch, FC, SetStateAction } from "react"
-import { ITrainer } from "../trainers.data"
+import Close from "./Close/Close"
+import Info from "./Info/Info"
 import "./Modal.sass"
-interface IProp {
-	trainer: ITrainer
-	close: Dispatch<SetStateAction<boolean>>
-}
-const Modal: FC<IProp> = ({ trainer: { name, job }, close }) => {
+import ModalCard from "./ModalCard/ModalCard"
+
+const Modal = () => {
 	return (
 		<div className='modal'>
-			<section>
-				{name}:{job}
-				<button onClick={() => close(false)}>close</button>
-			</section>
+			<div className='modal__body'>
+				<ModalCard />
+				<Info />
+				<Close />
+			</div>
 		</div>
 	)
 }

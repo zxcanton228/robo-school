@@ -79,7 +79,7 @@ export const trainersData: ITrainer[] = [
 	},
 	{
 		id: 5,
-		avatar: "/marina.png",
+		avatar: "/liza.jpg",
 		name: "Лиза Весенняя",
 		job: "программист",
 		info: [

@@ -1,0 +1,33 @@
+@import "./../../../../styles/_option"
+.modal__info
+	margin-top: 40px
+	hr
+		margin-top: 20px
+		width: 100%
+		height: 1px
+		background-color: $color
+		opacity: .11
+	.tabs__content
+		.tabs__courses
+			.tabs__courses-title
+				font: 600 24px $font
+				margin-top: 40px !important
+			ul
+				font: 400 20px $font
+		.tabs__info
+			font: 400 20px $font
+			line-height: 32px
+			margin-top: 20px !important
+	.tabs
+		display: flex
+		// justify-content: space-between
+		column-gap: 180px
+		width: 100%
+		button 
+			font: 400 20px $font
+			color: $color
+			transition: color .4s
+			&:hover
+				color: $accentHover
+			&.active
+				color: $accent

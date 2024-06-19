@@ -8,7 +8,7 @@ const Packet: FC<IPacket> = ({ description, isActive, price, rang }) => {
 			<h3 className='packet__rang'>– {rang} –</h3>
 			<div className='packet__text'>
 				<div>
-					<h1>{price} ₽</h1>
+					<h1>{price.toLocaleString()} ₽</h1>
 					<p>{description}</p>
 				</div>
 			</div>
